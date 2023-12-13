@@ -1,0 +1,177 @@
+@media screen and (max-width: 768px){
+    .home {
+        display:flex;
+        flex-direction:column;
+      
+        background-color: #454545;
+        color:white;
+        font-family:"Roboto";
+        height:90vh;
+    }
+    .ProfileImage {
+        width:300px;
+        height:300px;
+        border-radius: 200px;
+
+    }
+    .rightsidehome {
+        display:none;
+    }
+
+    .rightsidehomemobile {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width:90vw;
+        margin-top:10px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        height:90vh;
+        padding:20px;
+        background-color: #454545;
+        color:white;
+        font-family:"Roboto";
+    }
+
+    .rightsidehomemobile {
+        display:none;
+    }
+    
+    .ProfileImage {
+        width:300px;
+        height:300px;
+    }
+    .insidehome {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    
+    }
+    .leftsidehome {
+        width:70%
+    }
+    .rightsidehome {
+        width:30%;
+    }
+}
+
+.spanele {
+    color:red;
+    font-weight: 40px;
+    font-size: 40px;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .animation {
+    display: inline-block;
+    animation: textAnimation 4s infinite linear;
+    opacity: 0;
+  }
+  
+  @keyframes textAnimation {
+    0%, 20%, 50%, 80%, 100% {
+      opacity: 0;
+    }
+    10%, 30%, 40%, 60%, 90% {
+      opacity: 1;
+    }
+  }
+
+  .para {
+    margin-top:10px;
+  }
+
+  .icons1 {
+    color :white;
+    border-style: solid;
+    border-radius:20px;
+    border-color:orange;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top:20px;
+    padding:10px;
+    margin-right:10px;
+  }
+
+  .icons2 {
+    color :white;
+    border-style: solid;
+    border-radius:20px;
+    border-color:pink;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top:20px;
+    padding:10px;
+    margin-right:10px;
+  }
+
+  .icons3 {
+    color :white;
+    border-style: solid;
+    border-radius:20px;
+    border-color:yellow;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top:20px;
+    padding:10px;
+    margin-right:10px;
+  }
+  .links {
+    margin-top:20px;
+    
+  }
+
+
+
+.ProfileImage {
+  --color: #8A9B0F; /* the border color */
+  --border: 10px;   /* the border thickness*/
+  --offset: 20px;   /* control the offset*/
+  --gap: 5px;       /* the gap on hover */
+  
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+  --_o: calc(3*var(--offset));
+  padding: 
+    calc(var(--gap) + var(--border))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border));
+  background: 
+    linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+    linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+  background-repeat: no-repeat;
+  filter: grayscale(.4);
+  transition: .5s;
+  cursor: pointer;
+}
+.ProfileImage:hover {
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+  filter: grayscale(0);
+}
+
+
+
+
