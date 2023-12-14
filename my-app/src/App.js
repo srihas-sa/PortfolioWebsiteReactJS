@@ -9,16 +9,16 @@ import './App.css';
 const App = () => ( 
   <div className='outermostContainer'>
     <Header />
-    <div id="#home" className='HomeSection'>
+    <div id="home" className='HomeSection'>
         <Home />
     </div>
-    <div id="#skills" className='SkillsSetion'>
+    <div id="skills" className='SkillsSetion'>
         <Skills />
     </div>
-    <div id="#projects" className='ProjectsSection'>
+    <div id="projects" className='ProjectsSection'>
         <Projects />
     </div>
-    <div id="#projects" className='ProjectsSection'>
+    <div id="contactme" className='contactmeSection'>
         <Contact />
     </div>
   </div>

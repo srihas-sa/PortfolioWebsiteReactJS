@@ -1,71 +1,146 @@
 
-/* Navbar.css */
+.site-logo {
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+}
 
-.navbar {
+.header {
+  --text: #f4f4f4;
+  --text-inverse: #333;
+  --background: transparent;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
+  padding: 2em 3em;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar-links {
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 1rem;
-
-  @media (max-width: 768px) {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    text-align: center;
-  }
 }
 
-.navbar-links a {
+.nav__link {
+  --spacing: 1em;
   text-decoration: none;
-  color: #fff;
-  padding: 0.5rem 1rem;
-}
+  color: inherit;
+  display: inline-block;
+  padding: calc(var(--spacing) / 2) var(--spacing);
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
 
-.navbar-toggle {
-  display: none;
-  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: var(--spacing);
+    right: var(--spacing);
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+  }
 
-  @media (max-width: 768px) {
-    display: block;
+  &:hover::after {
+    transform: scaleX(1);
+  }
+
+  &--btn {
+    border: 1.5px solid currentColor;
+    border-radius: 2em;
+    margin-left: 1em;
+    transition: background 250ms ease-in-out;
+    letter-spacing: 1px;
+    padding: 0.75em 1.5em;
+
+    &:hover {
+      background: var(--text);
+      color: var(--text-inverse);
+      border-color: var(--text);
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &--highlight {
+      background: limegreen;
+      border-color: limegreen;
+      color: #333;
+
+      &:hover {
+        background: var(--text);
+        border-color: var(--text);
+      }
+    }
   }
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-  transition: 0.4s;
+.nav-scrolled {
+  --text: #333;
+  --text-inverse: #f4f4f4;
+  --background: #f4f4f4;
+
+  box-shadow: 0 3px 20px rgba(black, 0.2);
 }
 
-.navbar.open .navbar-links {
+.home-intro {
+  padding: 50vh 0;
+  background: #123 url(//unsplash.it/900);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+}
+
+.home-about {
+  padding: 4em 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.columns {
   display: flex;
 }
 
-.navbar.open .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
+.col + .col {
+  margin-left: 1.5em;
 }
 
-.navbar.open .bar:nth-child(2) {
-  opacity: 0;
+.more-stuff-grid {
+  background: #f4f4f4;
+  padding: 4em 0;
+  display: grid;
+  grid-gap: 2em;
+  align-items: center;
+  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+      1em,
+      1fr
+    );
 }
 
-.navbar.open .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+.from-left {
+  grid-column: 2 / 3;
+}
+
+.from-right {
+  grid-column: 3 / 4;
+}
+
+.spans {
+  color:red;
 }
