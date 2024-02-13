@@ -25,6 +25,39 @@
         width:90vw;
         margin-top:10px;
     }
+
+    .ProfileImage12 {
+        width:300px;
+        height:300px;
+        border-radius: 200px;
+        margin-top:60px;
+    }
+
+    @keyframes changeBorder {
+      0% {
+        border-color: red;
+      }
+      25% {
+        border-color: blue;
+      }
+      50% {
+        border-color: green;
+      }
+      75% {
+        border-color: yellow;
+      }
+      100% {
+        border-color: red;
+      }
+    }
+
+    .changing-border {
+      width: 200px;
+      height: 100px;
+      border: 2px solid red;
+      border-radius: 10px;
+      animation: changeBorder 5s infinite; /* Change the duration as needed */
+    }
 }
 
 @media screen and (min-width: 768px){

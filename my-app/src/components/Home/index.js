@@ -7,7 +7,7 @@ const Home = () => (
         <div className='insidehome'>
             <div className='leftsidehome'>
             <div className='rightsidehomemobile'>
-                <img src="https://res.cloudinary.com/dkcqlgabg/image/upload/v1700801556/photos_2_qvgvh6.jpg" alt="ProfileImage" className='ProfileImage'/>
+                    <img src="https://res.cloudinary.com/dkcqlgabg/image/upload/v1700801556/photos_2_qvgvh6.jpg" alt="ProfileImage" className='ProfileImage12'/>
             </div>
                 <h1>Welcome to My Portfolio!
                     <br />

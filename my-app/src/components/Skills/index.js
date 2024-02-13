@@ -1,4 +1,7 @@
 import React from 'react'
+import { FaReact, FaNodeJs , FaHtml5 , FaCss3Alt , FaPython , FaGit } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiMysql } from "react-icons/si";
 import './index.css'
 
 const Skills = () => (
@@ -14,7 +17,7 @@ const Skills = () => (
     <div class = "row">
       <div class = "item">
         <div class = "item-text">
-          <span>ReactJS</span>
+          <span>ReactJS <FaReact /> </span>
           <span class = "w-90">90%</span>
         </div>
         <div class = "progress">
@@ -24,7 +27,7 @@ const Skills = () => (
 
       <div class = "item">
         <div class = "item-text">
-          <span>NodeJs</span>
+          <span>NodeJs <FaNodeJs /></span>
           <span class = "w-75">75%</span>
         </div>
         <div class = "progress">
@@ -34,7 +37,7 @@ const Skills = () => (
 
       <div class = "item">
         <div class = "item-text">
-          <span>HTML5</span>
+          <span>HTML5 <FaHtml5 /> </span>
           <span class = "w-85">85%</span>
         </div>
         <div class = "progress">
@@ -44,7 +47,7 @@ const Skills = () => (
 
       <div class = "item">
         <div class = "item-text">
-          <span>CSS3</span>
+          <span>CSS3 <FaCss3Alt /> </span>
           <span class = "w-80">80%</span>
         </div>
         <div class = "progress">
@@ -54,7 +57,7 @@ const Skills = () => (
 
       <div class = "item">
         <div class = "item-text">
-          <span>Python</span>
+          <span>Python <FaPython  /> </span>
           <span class = "w-90">90%</span>
         </div>
         <div class = "progress">
@@ -64,7 +67,7 @@ const Skills = () => (
 
       <div class = "item">
         <div class = "item-text">
-          <span>JavaScript</span>
+          <span>JavaScript <TbBrandJavascript /></span>
           <span class = "w-80">80%</span>
         </div>
         <div class = "progress">
@@ -74,7 +77,7 @@ const Skills = () => (
 
       <div class = "item">
         <div class = "item-text">
-          <span>SQL</span>
+          <span>SQL <SiMysql size="30"/></span>
           <span class = "w-68">70%</span>
         </div>
         <div class = "progress">
@@ -84,7 +87,7 @@ const Skills = () => (
 
       <div class = "item">
         <div class = "item-text">
-          <span>Github</span>
+          <span>Github <FaGit /></span>
           <span class = "w-68">70%</span>
         </div>
         <div class = "progress">
